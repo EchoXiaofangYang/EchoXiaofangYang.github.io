@@ -8,7 +8,50 @@
         font-size: 18px;
         font-family: 'Lato', sans-serif;
         background-color: #1a1a1a;
-        padding: 80px 60px;
+        padding: 0;
+        margin: 0;
+      }
+
+      /* Navigation Bar */
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 60px;
+        border-bottom: 1px solid #2e2e2e;
+      }
+
+      .nav-logo {
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 20px;
+        text-decoration: none;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav-links a {
+        color: #a0a0a0;
+        text-decoration: none;
+        font-size: 16px;
+        transition: color 0.2s;
+      }
+
+      .nav-links a:hover,
+      .nav-links a.active {
+        color: #ffffff;
+        text-decoration: underline;
+      }
+
+      /* Main Content */
+      .content {
+        padding: 120px 60px;
       }
 
       .container {
@@ -33,9 +76,26 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <img src="headshot.png" alt="Xiaofang Yang">
-      <p>Hi, this is Xiaofang.</p>
+
+    <!-- Navigation Bar -->
+    <nav>
+      <a href="#" class="nav-logo">Xiaofang Yang</a>
+      <ul class="nav-links">
+        <li><a href="column.html">Column</a></li>
+        <li><a href="layer.html">Layer</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+      <div class="container">
+        <img src="headshot.png" alt="Xiaofang Yang">
+        <p>Hi, this is Xiaofang.</p>
+      </div>
     </div>
+
   </body>
 </html>
